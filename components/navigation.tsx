@@ -26,7 +26,7 @@ export function Navigation() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <a href="#hero" className="text-xl font-bold text-foreground hover:text-primary transition-colors">
-            Alejandro Berrío
+            Alejandro Berrio's CV
           </a>
           <div className="hidden md:flex items-center gap-6">
             <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">

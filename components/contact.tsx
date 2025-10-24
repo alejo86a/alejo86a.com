@@ -23,8 +23,8 @@ export function Contact() {
                 <Mail className="w-5 h-5 text-primary" />
                 <div>
                   <p className="text-sm text-muted-foreground">{t.contact.email}</p>
-                  <a href="mailto:alejo86a@gmail.com" className="font-medium hover:text-primary transition-colors">
-                    alejo86a@gmail.com
+                  <a href="mailto:info@alejo86a.com" className="font-medium hover:text-primary transition-colors">
+                    info@alejo86a.com
                   </a>
                 </div>
               </div>
@@ -89,8 +89,8 @@ export function Contact() {
                   {t.contact.downloadCV}
                 </a>
               </Button>
-              <Button asChild variant="ghost" size="lg" className="gap-2">
-                <a href="mailto:alejo86a@gmail.com">
+              <Button asChild variant="outline" size="lg" className="gap-2 bg-transparent">
+                <a href="mailto:info@alejo86a.com">
                   <Mail className="w-5 h-5" />
                   {t.contact.emailMe}
                 </a>

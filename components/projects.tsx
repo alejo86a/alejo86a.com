@@ -75,23 +75,23 @@ export function Projects() {
       },
     },
     {
-      name: t.projects.leetcode.name,
-      tagline: t.projects.leetcode.tagline,
-      highlights: t.projects.leetcode.highlights,
-      tags: ["JavaScript", "Algorithms", "Data Structures"],
-      category: ["algorithms"],
-      links: {
-        repo: "https://github.com/alejo86a/leetcode",
-      },
-    },
-    {
       name: t.projects.memoization.name,
       tagline: t.projects.memoization.tagline,
       highlights: t.projects.memoization.highlights,
       tags: ["Node.js", "JavaScript"],
       category: ["backend"],
       links: {
-        repo: "https://github.com/alejo86a/memoization",
+        repo: "https://github.com/alejo86a/memoization-nodejs",
+      },
+    },
+    {
+      name: t.projects.leetcode.name,
+      tagline: t.projects.leetcode.tagline,
+      highlights: t.projects.leetcode.highlights,
+      tags: ["Algorithms", "Data Structures", "Problem Solving", "Python", "JavaScript"],
+      category: ["algorithms"],
+      links: {
+        repo: "https://github.com/alejo86a/leetcode",
       },
     },
     {
