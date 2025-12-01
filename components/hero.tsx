@@ -1,7 +1,8 @@
 "use client"
 
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Calendar, Linkedin, Mail, Download, MapPin } from "lucide-react"
+import { Calendar, Linkedin, Mail, Download, MapPin, Github } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 
 export function Hero() {
@@ -11,6 +12,19 @@ export function Hero() {
     <section id="hero" className="min-h-screen flex items-center justify-center px-4 pt-20">
       <div className="container mx-auto max-w-5xl">
         <div className="text-center space-y-6">
+          {/* Profile Picture */}
+          <div className="flex justify-center mb-8">
+            <div className="relative w-40 h-40 md:w-48 md:h-48 transition-transform duration-300 hover:scale-105">
+              <Image
+                src="/profile-picture.png"
+                alt="José Alejandro Berrío Marín"
+                fill
+                className="rounded-full object-cover ring-4 ring-primary/40 hover:ring-primary/60 shadow-xl transition-all duration-300"
+                priority
+              />
+            </div>
+          </div>
+
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
             <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
             Available for new opportunities
@@ -31,27 +45,27 @@ export function Hero() {
             <span>Medellín, Colombia</span>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-6">
-            <Button asChild size="lg" className="gap-2">
+          <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 sm:gap-4 pt-6 w-full max-w-2xl mx-auto">
+            <Button asChild size="lg" className="gap-2 w-full sm:w-auto">
               <a href="https://calendly.com/alejo86a/30min" target="_blank" rel="noopener noreferrer">
                 <Calendar className="w-5 h-5" />
                 {t.hero.scheduleCall}
               </a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="gap-2 bg-transparent">
+            <Button asChild variant="outline" size="lg" className="gap-2 bg-transparent w-full sm:w-auto">
               <a href="https://linkedin.com/in/alejo86a" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-5 h-5" />
                 {t.hero.viewLinkedIn}
               </a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="gap-2 bg-transparent">
-              <a href="#contact">
-                <Download className="w-5 h-5" />
-                {t.hero.downloadCV}
+            <Button asChild variant="outline" size="lg" className="gap-2 bg-transparent w-full sm:w-auto">
+              <a href="https://github.com/alejo86a" target="_blank" rel="noopener noreferrer">
+                <Github className="w-5 h-5" />
+                GitHub
               </a>
             </Button>
-            <Button asChild variant="ghost" size="lg" className="gap-2">
-              <a href="mailto:alejo86a@gmail.com">
+            <Button asChild variant="ghost" size="lg" className="gap-2 w-full sm:w-auto">
+              <a href="mailto:info@alejo86a.com">
                 <Mail className="w-5 h-5" />
                 {t.hero.emailMe}
               </a>

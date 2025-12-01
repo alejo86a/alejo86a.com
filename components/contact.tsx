@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Calendar, Linkedin, Mail, Download, MapPin } from "lucide-react"
+import { Calendar, Linkedin, Mail, Download, MapPin, Github } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 
 export function Contact() {
@@ -53,16 +53,16 @@ export function Contact() {
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <Calendar className="w-5 h-5 text-primary" />
+                <Github className="w-5 h-5 text-primary" />
                 <div>
-                  <p className="text-sm text-muted-foreground">{t.contact.scheduleCall}</p>
+                  <p className="text-sm text-muted-foreground">GitHub</p>
                   <a
-                    href="https://calendly.com/alejo86a/30min"
+                    href="https://github.com/alejo86a"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-medium hover:text-primary transition-colors"
                   >
-                    calendly.com/alejo86a/30min
+                    github.com/alejo86a
                   </a>
                 </div>
               </div>
@@ -81,12 +81,6 @@ export function Contact() {
                 <a href="https://linkedin.com/in/alejo86a" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-5 h-5" />
                   {t.contact.connectLinkedIn}
-                </a>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="gap-2 bg-transparent">
-                <a href="/cv-alejandro-berrio.pdf" download>
-                  <Download className="w-5 h-5" />
-                  {t.contact.downloadCV}
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg" className="gap-2 bg-transparent">

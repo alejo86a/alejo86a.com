@@ -632,6 +632,323 @@ export const translations = {
       footer: "Construido con Next.js y desplegado en GitHub Pages.",
     },
   },
+  pt: {
+    nav: {
+      about: "Sobre Mim",
+      highlights: "Destaques",
+      experience: "Experiência",
+      skills: "Habilidades",
+      projects: "Projetos",
+      contact: "Contato",
+      scheduleCall: "Agendar Chamada",
+    },
+    hero: {
+      greeting: "Olá, sou",
+      name: "José Alejandro Berrío",
+      title: "Líder de Engenharia de Software | Especialista Backend | Especialista em Fintech",
+      description:
+        "9+ anos construindo plataformas fintech escaláveis na LATAM. Lidero equipes, arquiteto sistemas distribuídos e entrego impacto mensurável — desde lançar soluções de pagamento processando 1M+ transações mensais até construir plataformas de fidelidade servindo 700+ negócios.",
+      scheduleCall: "Agendar uma Chamada",
+      viewLinkedIn: "Ver LinkedIn",
+      downloadCV: "Baixar CV",
+      emailMe: "Enviar Email",
+    },
+    about: {
+      title: "Sobre Mim",
+      intro:
+        "Sou um Líder de Engenharia de Software com 9+ anos de experiência construindo plataformas fintech e B2B na América Latina. Liderei equipes de até 9 engenheiros em empresas como Mercado Libre, Rappi e Leal — entregando sistemas que processam milhões de transações e servem centenas de milhares de usuários.",
+      passion:
+        "Sou apaixonado por engenharia backend, sistemas distribuídos e mentorar equipes para entregar produtos de alto impacto. Prospero em ambientes dinâmicos onde a tecnologia impulsiona diretamente os resultados do negócio.",
+      languages: "Idiomas que falo:",
+      spanish: "Espanhol",
+      english: "Inglês",
+      portuguese: "Português",
+      native: "Nativo",
+      fluent: "Fluente (C2)",
+      intermediate: "Intermediário",
+    },
+    highlights: {
+      title: "Destaques da Carreira",
+      subtitle: "Projetos-chave que demonstram minha liderança e impacto técnico",
+      mercadoPago: {
+        title: "Mercado Pago — Pagamentos QR",
+        company: "Mercado Libre",
+        description:
+          "Liderei uma equipe multifuncional de 9 engenheiros para arquitetar e implantar uma solução de pagamento baseada em QR para Buenos Aires, alcançando rápida adoção no mercado e escalando para processar mais de 1M de transações mensais em poucos meses após o lançamento.",
+        impact: "Impacto e Liderança",
+        points: [
+          "Coordenei equipes iOS, Android e Backend através do ciclo completo de desenvolvimento do produto",
+          "Projetei infraestrutura de pagamento robusta capaz de lidar com 1M+ transações mensais",
+          "Alcancei e mantive 100% de conformidade de SLA por mais de 12 meses consecutivos",
+          "Desenvolvi mecanismos seguros de criptografia e assinatura QR para integridade de transações",
+        ],
+      },
+      leal: {
+        title: "Leal — Plataforma de Fidelidade",
+        company: "Leal",
+        description:
+          "Orquestrei uma equipe de engenharia de 7 membros para arquitetar e expandir um ecossistema abrangente de fidelidade e recompensas servindo mais de 1M de usuários e 700+ negócios parceiros em 8 mercados latino-americanos.",
+        impact: "Impacto e Liderança",
+        points: [
+          "Projetei sistemas backend usando Go e Node.js enquanto supervisionava frontend baseado em Flutter",
+          "Expandi o alcance da plataforma para 700+ negócios em 8 países da América Latina",
+          "Melhorei o desempenho de reconciliação de transações em 30% para integração de cartão de crédito co-branded",
+          "Treinei engenheiros e implementei melhores práticas para arquitetura de sistemas distribuídos",
+        ],
+      },
+      rappiPay: {
+        title: "RappiPay — Produtos Financeiros",
+        company: "Rappi",
+        description:
+          "Pioneiro da plataforma de serviços financeiros do RappiPay, entregando a primeira parceria de cartão de crédito co-branded da Colômbia com Davivienda e uma conta poupança digital que atraiu mais de 100K usuários na América Latina.",
+        impact: "Impacto e Liderança",
+        points: [
+          "Projetei e implementei sistemas backend para transferências de dinheiro, cartões de crédito e contas poupança",
+          "Estabeleci parceria estratégica de cartão de crédito co-branded com instituição financeira colombiana líder",
+          "Cresci a base de usuários de conta poupança para 100K+ clientes ativos na LATAM",
+          "Estabeleci fundação técnica permitindo a expansão estratégica da Rappi em tecnologia financeira",
+        ],
+      },
+    },
+    experience: {
+      title: "Experiência Profissional",
+      present: "Presente",
+      mercadoLibre: {
+        title: "Líder de Projeto",
+        company: "Mercado Libre - Mercado Pago",
+        location: "Buenos Aires/São Paulo/Medellín",
+        points: [
+          "Dirigi uma equipe de 9 engenheiros (5 iOS, 4 Android) entregando recursos-chave de pagamento para milhões de usuários",
+          "Planejei e executei projetos com produto e UX, garantindo alinhamento com objetivos da empresa",
+          "Lancei solução de pagamento QR em 2 meses, escalando para 300K+ transações no primeiro mês e mais de 1M mensais depois",
+          "Eliminei dívida técnica de vários anos e mantive classificação SLA 'Above' com 100% de conformidade por 12+ meses",
+          "Implementei algoritmos de criptografia e assinatura QR; liderei contratação, mentoria, revisões de PR e planos de carreira",
+        ],
+      },
+      leal: {
+        title: "Líder Técnico",
+        company: "Leal",
+        location: "Bogotá",
+        points: [
+          "Liderei 7 engenheiros projetando uma plataforma de fidelidade com 1M+ usuários e 700+ negócios em 8 países",
+          "Arquitetei backend (Go, Node.js) e coordenei frontend Flutter para acelerar entrega de produto",
+          "Mantive e melhorei sistema de cartão de crédito co-branded com Davivienda, melhorando velocidade de reconciliação de transações em 30%",
+        ],
+      },
+      prodigious: {
+        title: "Engenheiro de Software Senior Principal",
+        company: "Prodigious (Publicis Global Delivery)",
+        location: "Paris, França",
+        points: [
+          "Desenvolvi serviços backend em Node.js, Java, React e Azure, apoiando clientes internacionais",
+          "Liderei frameworks internos (Knex, Spring Boot) e conduzi 20+ entrevistas para engenheiros senior de Node.js",
+        ],
+      },
+      bairesDev: {
+        title: "Engenheiro de Desenvolvimento de Software",
+        company: "Baires Dev",
+        location: "San Francisco, EUA",
+        points: [
+          "Construí backend Node.js para Instructure LMS usado por milhares de educadores",
+          "Entreguei backend e DevOps para Waitr App, otimizando pipelines CI/CD e implantações em nuvem",
+        ],
+      },
+      rapicredit: {
+        title: "Engenheiro de Software",
+        company: "Rapicredit",
+        location: "Bogotá",
+        points: [
+          "Desenvolvi APIs com Java Spring Boot e motor de regras Drools para pontuação automática de risco de crédito",
+          "Implementei componentes Angular, reduzindo taxa de defeitos frontend em 15%",
+        ],
+      },
+      rappi: {
+        title: "Desenvolvedor Backend Intermediário",
+        company: "Rappi",
+        location: "Bogotá",
+        points: [
+          "Co-criei RappiPay: habilitei transferências de dinheiro, lancei primeiro cartão de crédito co-branded com Davivienda e conta poupança adotada por 100K+ usuários",
+        ],
+      },
+      seti: {
+        title: "Consultor de Desenvolvimento",
+        company: "SETI / SURA",
+        location: "Medellín",
+        points: [
+          "Engenhei plataforma de gestão de propostas (Angular, Java EE, Oracle) melhorando eficiência de vendas em 25%",
+          "Entreguei sistema de cotação/venda de seguros (GuideWire, Angular, Scala) lidando com milhares de apólices mensais",
+        ],
+      },
+    },
+    skills: {
+      title: "Habilidades e Tecnologias",
+      subtitle: "Competências principais e ferramentas que uso diariamente",
+      backend: {
+        title: "Backend e APIs",
+        nodejs: "Runtime JavaScript do lado do servidor para aplicações escaláveis",
+        typescript: "JavaScript com tipos para bases de código robustas",
+        go: "Entusiasta em sistemas concorrentes de alto desempenho",
+        python: "Entusiasta em processamento de dados e scripting",
+        java: "Aplicações empresariais e microsserviços",
+        php: "Aplicações web e APIs",
+      },
+      databases: {
+        title: "Bancos de Dados e Armazenamento",
+        dynamodb: "Banco de dados NoSQL para aplicações de alta escala",
+        postgresql: "Banco de dados relacional para consultas complexas",
+        mysql: "Banco de dados relacional de código aberto popular",
+        redis: "Armazenamento de dados em memória para cache",
+        mariadb: "Banco de dados relacional compatível com MySQL",
+      },
+      cloud: {
+        title: "Cloud e DevOps",
+        aws: "Infraestrutura e serviços em nuvem",
+        kubernetes: "Plataforma de orquestração de contêineres",
+        docker: "Containerização de aplicações",
+        terraform: "Infraestrutura como código",
+        kafka: "Streaming de eventos distribuídos",
+      },
+      frontend: {
+        title: "Frontend e Mobile",
+        react: "Biblioteca UI para aplicações web",
+        angular: "Framework web completo",
+        vue: "Framework JavaScript progressivo",
+        nextjs: "Framework React para produção",
+      },
+      tools: {
+        title: "Ferramentas e Práticas",
+        git: "Controle de versão e colaboração",
+        jira: "Gestão e rastreamento de projetos",
+        datadog: "Monitoramento e observabilidade",
+        jest: "Framework de testes JavaScript",
+      },
+    },
+    projects: {
+      title: "Projetos e Código Aberto",
+      subtitle: "Repositórios em destaque mostrando minha amplitude técnica e abordagem de resolução de problemas",
+      filters: {
+        all: "Todos",
+        backend: "Backend",
+        frontend: "Frontend",
+        fullstack: "Full-stack",
+        algorithms: "Algoritmos",
+      },
+      viewRepo: "Ver Repo",
+      viewFrontend: "Frontend",
+      viewBackend: "Backend",
+      viewAdmin: "Admin",
+      exploreProblems: "Explorar Problemas",
+      viewSource: "Ver Código",
+      note: "Estudos de caso de produção (Mercado Pago QR, RappiPay, Leal) disponíveis sob solicitação; código é privado.",
+      caseStudies: {
+        title: "Estudos de Caso Profissionais",
+        subtitle: "Bases de código privadas com impacto empresarial mensurável",
+        mercadoPago:
+          "Liderei equipe de 9 engenheiros; lancei em 2 meses; escalei de ~300K para 1M+ transações mensais; 100% SLA durante um ano.",
+        rappiPay:
+          "Cartão de crédito co-branded e conta poupança com Davivienda; processos backend em contexto fintech regulado.",
+        leal: "Liderei equipe de 7 pessoas; 1M+ usuários / 700+ negócios em 8 países; melhorias em reconciliação de transações.",
+      },
+      inventario: {
+        name: "Inventario Suite",
+        tagline: "Demo full-stack de inventário + loja com arquitetura modular e múltiplos frameworks frontend",
+        highlights: [
+          "Loja Angular (Tienda), admin React/Next.js (Inventario)",
+          "Serviços backend NestJS e Koa com orquestração Docker",
+          "Demonstra entrega end-to-end e flexibilidade de frameworks",
+        ],
+      },
+      nestEvents: {
+        name: "Nest Events",
+        tagline: "App de gestão de eventos com backend NestJS e frontend Vue/Tailwind",
+        highlights: [
+          "Scripts limpos para ambientes dev/prod/test",
+          "UI leve baseada em componentes com Tailwind CSS",
+          "Exemplo completo de integração API + UI",
+        ],
+      },
+      coordinadora: {
+        name: "Coordinadora API Tracking",
+        tagline: "Integração leve para consultar e normalizar rastreamento de envios da Coordinadora",
+        highlights: [
+          "Normaliza respostas da transportadora em modelo de domínio consistente",
+          "Útil para backends de e-commerce e dashboards logísticos",
+          "SDK TypeScript limpo com testes abrangentes",
+        ],
+      },
+      fuleo: {
+        name: "Fuleo",
+        tagline: "Scaffold Angular com testes unit/e2e demonstrando disciplina de testes frontend",
+        highlights: [
+          "Scaffolding CLI com comandos de teste",
+          "Estrutura de pastas clara para aplicações escaláveis",
+          "Configuração de testes Karma e Protractor",
+        ],
+      },
+      leetcode: {
+        name: "Prática LeetCode",
+        tagline: "Centenas de soluções de estruturas de dados e algoritmos demonstrando consistência e amplitude",
+        highlights: [
+          "Cobertura: arrays, árvores, DP, grafos, agendamento e mais",
+          "Forte sinal de resolução de problemas e reconhecimento de padrões",
+          "Anos de prática e aprendizado consistente",
+        ],
+      },
+      memoization: {
+        name: "Memoization em Node.js",
+        tagline: "Utilitário de memoização pequeno e legível usando closures para otimização de desempenho",
+        highlights: [
+          "Código simples com forte clareza",
+          "Demonstra atenção a fundamentos de desempenho",
+          "Utilitário prático para cachear computações caras",
+        ],
+      },
+      personalSite: {
+        name: "Site Pessoal",
+        tagline: "Monorepo para meu site de portfólio público (alejo86a.com)",
+        highlights: [
+          "Entrega estática rápida com GitHub Pages",
+          "Branding profissional e links de contato",
+          "Design responsivo com stack moderno",
+        ],
+      },
+    },
+    education: {
+      title: "Educação e Conquistas",
+      education: "Educação",
+      achievements: "Principais Conquistas",
+      certificates: "Certificados",
+      systemsEngineering: "Engenharia de Sistemas",
+      cloudComputing: "Diploma em Fundamentos de Cloud Computing",
+      leadership: "Diploma: Liderança em uma Era de Disrupção",
+      microservices: "Diploma em Arquitetura Avançada com Microsserviços",
+      systemsTechnique: "Técnica em Sistemas",
+      achievement1: "Mercado Pago: Pagamentos QR escalando de 0 para 1M+ transações mensais",
+      achievement2:
+        "RappiPay: Lancei primeiro cartão de crédito co-branded e conta poupança adotada por 100K+ usuários",
+      achievement3: "Leal: Plataforma de fidelidade com 1M+ usuários e 700+ negócios em 8 países",
+      achievement4: "Hackathons: Startup Weekend Medellín (IoT, Fintech Challenge), finalista Apps.co",
+      achievement5: "Fundador: Peiname.co MVP (Android/iOS), marketing e descoberta de clientes",
+      ibmCloud: "Fundamentos de IBM Cloud",
+      cloudFundamentals: "Fundamentos de Cloud Computing",
+      scala: "Curso Intensivo de SCALA",
+      jenkins: "Jenkins CI e DevOps",
+    },
+    contact: {
+      title: "Vamos Conectar",
+      subtitle:
+        "Interessado em colaborar, contratar ou discutir uma oportunidade potencial? Adoraria conectar — vamos conversar!",
+      email: "Email",
+      location: "Localização",
+      linkedin: "LinkedIn",
+      scheduleCall: "Agendar uma Chamada",
+      scheduleCallBtn: "Agendar uma Chamada",
+      connectLinkedIn: "Conectar no LinkedIn",
+      downloadCV: "Baixar CV",
+      emailMe: "Enviar Email",
+      footer: "Construído com Next.js e implantado no GitHub Pages.",
+    },
+  },
 }
 
 export type Language = keyof typeof translations

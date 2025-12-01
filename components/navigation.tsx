@@ -19,14 +19,13 @@ export function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/95 backdrop-blur-sm border-b border-border shadow-sm" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-sm border-b border-border shadow-sm" : "bg-transparent"
+        }`}
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <a href="#hero" className="text-xl font-bold text-foreground hover:text-primary transition-colors">
-            Alejandro Berrio's CV
+            Alejandro Berrio&apos;s CV
           </a>
           <div className="hidden md:flex items-center gap-6">
             <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -63,6 +62,14 @@ export function Navigation() {
                 aria-label="Cambiar a Español"
               >
                 🇨🇴
+              </button>
+              <button
+                onClick={() => setLanguage("pt")}
+                className={`text-2xl transition-opacity ${language === "pt" ? "opacity-100" : "opacity-40 hover:opacity-70"}`}
+                title="Português"
+                aria-label="Mudar para Português"
+              >
+                🇧🇷
               </button>
             </div>
           </div>
