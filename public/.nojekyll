@@ -1,0 +1,5 @@
+# Disable Jekyll Processing
+
+This file tells GitHub Pages to skip Jekyll processing.
+Without this file, Jekyll ignores the `_next` folder (because it starts with underscore),
+which breaks the Next.js static site.
