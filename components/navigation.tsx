@@ -31,6 +31,9 @@ export function Navigation() {
             <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               {t.nav.about}
             </a>
+            <a href="#setup" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              {t.nav.setup}
+            </a>
             <a href="#highlights" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               {t.nav.highlights}
             </a>
