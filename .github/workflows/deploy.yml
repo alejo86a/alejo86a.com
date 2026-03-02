@@ -32,10 +32,10 @@ jobs:
       - name: Deploy to alejo86a.github.io
         uses: peaceiris/actions-gh-pages@v4
         with:
-          personal_token: ${{ secrets.PAGES_DEPLOY_TOKEN }}
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
           external_repository: alejo86a/alejo86a.github.io
           publish_branch: main
           publish_dir: ./out
-          force_orphan: false
           keep_files: false
+          cname: alejo86a.com
           commit_message: "deploy: update site from alejo86a.com@${{ github.sha }}"
