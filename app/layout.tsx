@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { LanguageProvider } from "@/lib/language-context"
+import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -48,9 +49,9 @@ export const metadata: Metadata = {
     type: "profile",
     images: [
       {
-        url: "/profile-picture.png",
+        url: "/og-card.png",
         width: 1200,
-        height: 1200,
+        height: 630,
         alt: "José Alejandro Berrío Marín - Lead Software Engineer",
       },
     ],
@@ -60,7 +61,7 @@ export const metadata: Metadata = {
     title: "José Alejandro Berrío Marín | Lead Software Engineer",
     description:
       "Lead Software Engineer with 9+ years building scalable fintech platforms in LATAM. Expert in backend engineering and distributed systems.",
-    images: ["/profile-picture.png"],
+    images: ["/og-card.png"],
   },
   robots: {
     index: true,
@@ -90,7 +91,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
@@ -141,10 +142,12 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.className} antialiased`}>
-        <LanguageProvider>
-          {children}
-          <Analytics />
-        </LanguageProvider>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+          <LanguageProvider>
+            {children}
+            <Analytics />
+          </LanguageProvider>
+        </ThemeProvider>
       </body>
     </html>
   )

@@ -1,7 +1,11 @@
+"use client"
+
 import { Card } from "@/components/ui/card"
 import { GraduationCap, Award } from "lucide-react"
+import { useScrollAnimation } from "@/lib/use-scroll-animation"
 
 export function Education() {
+  const ref = useScrollAnimation()
   const education = [
     {
       degree: "Systems Engineering",
@@ -51,7 +55,7 @@ export function Education() {
 
   return (
     <section id="education" className="py-24 px-4 bg-muted/30">
-      <div className="container mx-auto max-w-6xl">
+      <div ref={ref} className="container mx-auto max-w-6xl animate-on-scroll">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Education & Achievements</h2>
 
         <div className="grid md:grid-cols-2 gap-8">

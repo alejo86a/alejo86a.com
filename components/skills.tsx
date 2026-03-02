@@ -3,9 +3,11 @@
 import { Card } from "@/components/ui/card"
 import { Code, Cloud, Database, Wrench } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
+import { useScrollAnimation } from "@/lib/use-scroll-animation"
 
 export function Skills() {
   const { t } = useLanguage()
+  const ref = useScrollAnimation()
 
   const skillCategories = [
     {
@@ -72,7 +74,7 @@ export function Skills() {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{t.skills.subtitle}</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div ref={ref} className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 animate-on-scroll stagger">
           {skillCategories.map((category, index) => {
             const Icon = category.icon
             return (

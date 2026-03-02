@@ -2,13 +2,15 @@
 
 import { Card } from "@/components/ui/card"
 import { useLanguage } from "@/lib/language-context"
+import { useScrollAnimation } from "@/lib/use-scroll-animation"
 
 export function About() {
   const { t } = useLanguage()
+  const ref = useScrollAnimation()
 
   return (
     <section id="about" className="py-24 px-4 bg-muted/30">
-      <div className="container mx-auto max-w-4xl">
+      <div ref={ref} className="container mx-auto max-w-4xl animate-on-scroll">
         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">{t.about.title}</h2>
 
         <Card className="p-8 space-y-6">

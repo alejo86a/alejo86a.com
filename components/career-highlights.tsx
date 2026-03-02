@@ -3,9 +3,11 @@
 import { Card } from "@/components/ui/card"
 import { TrendingUp, Users, Globe } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
+import { useScrollAnimation } from "@/lib/use-scroll-animation"
 
 export function CareerHighlights() {
   const { t } = useLanguage()
+  const ref = useScrollAnimation()
 
   const highlights = [
     {
@@ -42,7 +44,7 @@ export function CareerHighlights() {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{t.highlights.subtitle}</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div ref={ref} className="grid md:grid-cols-3 gap-6 animate-on-scroll stagger">
           {highlights.map((highlight, index) => {
             const Icon = highlight.icon
             return (

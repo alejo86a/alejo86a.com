@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Github } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
+import { useScrollAnimation } from "@/lib/use-scroll-animation"
 
 type FilterType = "all" | "backend" | "frontend" | "fullstack" | "algorithms"
 
@@ -27,6 +28,7 @@ interface Project {
 export function Projects() {
   const { t } = useLanguage()
   const [filter, setFilter] = useState<FilterType>("all")
+  const ref = useScrollAnimation()
 
   const projects: Project[] = [
     {
@@ -110,7 +112,7 @@ export function Projects() {
 
   return (
     <section id="projects" className="py-24 px-4 bg-muted/30">
-      <div className="container mx-auto max-w-6xl">
+      <div ref={ref} className="container mx-auto max-w-6xl animate-on-scroll">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">{t.projects.title}</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{t.projects.subtitle}</p>
@@ -122,11 +124,10 @@ export function Projects() {
             <button
               key={f}
               onClick={() => setFilter(f)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                filter === f
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${filter === f
                   ? "bg-primary text-primary-foreground"
                   : "bg-background text-muted-foreground hover:bg-muted"
-              }`}
+                }`}
             >
               {t.projects.filters[f]}
             </button>

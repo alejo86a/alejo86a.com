@@ -4,13 +4,15 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Calendar, Linkedin, Mail, Download, MapPin, Github } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
+import { useScrollAnimation } from "@/lib/use-scroll-animation"
 
 export function Contact() {
   const { t } = useLanguage()
+  const ref = useScrollAnimation()
 
   return (
     <section id="contact" className="py-24 px-4">
-      <div className="container mx-auto max-w-4xl">
+      <div ref={ref} className="container mx-auto max-w-4xl animate-on-scroll">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">{t.contact.title}</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{t.contact.subtitle}</p>

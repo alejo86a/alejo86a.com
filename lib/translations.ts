@@ -8,6 +8,7 @@ export const translations = {
       skills: "Skills",
       projects: "Projects",
       contact: "Contact",
+      blog: "Blog",
       scheduleCall: "Schedule Call",
     },
     setup: {
@@ -346,6 +347,7 @@ export const translations = {
       skills: "Habilidades",
       projects: "Proyectos",
       contact: "Contacto",
+      blog: "Blog",
       scheduleCall: "Agendar Llamada",
     },
     setup: {
@@ -685,6 +687,7 @@ export const translations = {
       skills: "Habilidades",
       projects: "Projetos",
       contact: "Contato",
+      blog: "Blog",
       scheduleCall: "Agendar Chamada",
     },
     setup: {
