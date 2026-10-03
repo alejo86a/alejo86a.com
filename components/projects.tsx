@@ -38,11 +38,7 @@ export function Projects() {
       tags: ["Node.js", "NestJS", "Koa", "React", "Next.js", "Angular", "TypeScript", "Docker"],
       category: ["fullstack", "backend", "frontend"],
       links: {
-        repo: "https://github.com/alejo86a",
-        frontend: "https://github.com/alejo86a/tienda",
-        admin: "https://github.com/alejo86a/inventario",
-        inventarioBack: "https://github.com/alejo86a/inventario-back",
-        tiendaBack: "https://github.com/alejo86a/tienda-back",
+        repo: "https://github.com/alejo86a/fullstack-monorepo-example",
       },
     },
     {
@@ -52,7 +48,7 @@ export function Projects() {
       tags: ["NestJS", "TypeScript", "Jest", "Vue", "Tailwind", "Docker"],
       category: ["fullstack", "backend", "frontend"],
       links: {
-        backend: "https://github.com/alejo86a/nest-events",
+        backend: "https://github.com/alejo86a/nest-events-backend",
         frontend: "https://github.com/alejo86a/nest-events-frontend",
       },
     },
@@ -60,10 +56,10 @@ export function Projects() {
       name: t.projects.coordinadora.name,
       tagline: t.projects.coordinadora.tagline,
       highlights: t.projects.coordinadora.highlights,
-      tags: ["Node.js", "TypeScript", "REST", "Axios", "Jest"],
+      tags: ["NestJS", "Clean Architecture", "TypeScript", "Docker", "PostgreSQL", "Redis"],
       category: ["backend"],
       links: {
-        repo: "https://github.com/alejo86a/coordinadora-api-tracking",
+        repo: "https://github.com/alejo86a/shiptrack-api",
       },
     },
     {
@@ -77,13 +73,13 @@ export function Projects() {
       },
     },
     {
-      name: t.projects.memoization.name,
-      tagline: t.projects.memoization.tagline,
-      highlights: t.projects.memoization.highlights,
-      tags: ["Node.js", "JavaScript"],
+      name: t.projects.aiMetaRepo.name,
+      tagline: t.projects.aiMetaRepo.tagline,
+      highlights: t.projects.aiMetaRepo.highlights,
+      tags: ["AI Agents", "Developer Tools", "Automation", "LLM", "AGENTS.md"],
       category: ["backend"],
       links: {
-        repo: "https://github.com/alejo86a/memoization-nodejs",
+        repo: "https://github.com/alejo86a/ai-meta-repo-prompt",
       },
     },
     {
@@ -93,7 +89,7 @@ export function Projects() {
       tags: ["Algorithms", "Data Structures", "Problem Solving", "Python", "JavaScript"],
       category: ["algorithms"],
       links: {
-        repo: "https://github.com/alejo86a/leetcode",
+        repo: "https://github.com/alejo86a/leet-code-excercises",
       },
     },
     {
@@ -103,7 +99,7 @@ export function Projects() {
       tags: ["GitHub Pages", "Next.js", "React", "TypeScript"],
       category: ["frontend", "fullstack"],
       links: {
-        repo: "https://github.com/alejo86a/alejo86a.github.io",
+        repo: "https://github.com/alejo86a/alejo86a.com",
       },
     },
   ]

@@ -258,12 +258,12 @@ export const translations = {
         ],
       },
       coordinadora: {
-        name: "Coordinadora API Tracking",
-        tagline: "Lightweight integration to query and normalize Coordinadora shipment tracking",
+        name: "ShipTrack API",
+        tagline: "Logistics tracking API built story-first (BMAD method): PRD + 4 ADRs decided before a single line of code",
         highlights: [
-          "Normalizes carrier responses into consistent domain model",
-          "Useful for e-commerce backends and logistics dashboards",
-          "Clean TypeScript SDK with comprehensive tests",
+          "Clean/Hexagonal Architecture (NestJS, TypeScript, raw SQL, no ORM) — each choice recorded in an ADR with rationale and trade-offs",
+          "13 PRs, each scoped to a Story + numbered Acceptance Criteria agreed before implementation",
+          "Test-first harness: unit/integration/e2e suites driven by the AC set, not bolted on after the fact",
         ],
       },
       fuleo: {
@@ -284,22 +284,22 @@ export const translations = {
           "Years of consistent practice and learning",
         ],
       },
-      memoization: {
-        name: "Memoization in Node.js",
-        tagline: "Tiny, readable memoization utility using closures for performance optimization",
+      aiMetaRepo: {
+        name: "AI Meta-Repo Prompt",
+        tagline: "A business-agnostic, model-agnostic meta-repo creator — studies a set of repos and generates a cross-repo AGENTS.md context hub",
         highlights: [
-          "Simple code with strong clarity",
-          "Demonstrates attention to performance basics",
-          "Practical utility for caching expensive computations",
+          "Mines real PR review habits per repo and merges them with official language style guides",
+          "Verifies itself: deterministic pre-commit gate + adversarial AI review + real sandbox end-to-end run on every change",
+          "Self-improving by design — any agent that finds a gap proposes the fix back into the generated standard",
         ],
       },
       personalSite: {
         name: "Personal Site",
-        tagline: "Monorepo for my public portfolio site (alejo86a.com)",
+        tagline: "Source for alejo86a.com (Next.js/TypeScript/Tailwind) — compiled output auto-deployed to alejo86a.github.io via GitHub Actions",
         highlights: [
-          "Fast static delivery with GitHub Pages",
+          "Static export pipeline: push to main → build → publish to the Pages repo, no manual steps",
           "Professional branding and contact links",
-          "Responsive design with modern stack",
+          "Responsive design, dark mode, EN/ES/PT i18n",
         ],
       },
     },
@@ -597,12 +597,12 @@ export const translations = {
         ],
       },
       coordinadora: {
-        name: "Coordinadora API Tracking",
-        tagline: "Integración ligera para consultar y normalizar seguimiento de envíos de Coordinadora",
+        name: "ShipTrack API",
+        tagline: "API de rastreo logístico construida story-first (método BMAD): PRD + 4 ADRs decididos antes de escribir una línea de código",
         highlights: [
-          "Normaliza respuestas del transportista en modelo de dominio consistente",
-          "Útil para backends de e-commerce y dashboards logísticos",
-          "SDK TypeScript limpio con tests comprehensivos",
+          "Arquitectura Clean/Hexagonal (NestJS, TypeScript, SQL crudo, sin ORM) — cada decisión registrada en un ADR con razones y trade-offs",
+          "13 PRs, cada una delimitada por una Story + Criterios de Aceptación numerados acordados antes de implementar",
+          "Harness test-first: suites unit/integration/e2e guiadas por los AC, no agregadas después",
         ],
       },
       fuleo: {
@@ -623,22 +623,22 @@ export const translations = {
           "Años de práctica y aprendizaje consistente",
         ],
       },
-      memoization: {
-        name: "Memoization en Node.js",
-        tagline: "Utilidad de memoización pequeña y legible usando closures para optimización de rendimiento",
+      aiMetaRepo: {
+        name: "AI Meta-Repo Prompt",
+        tagline: "Un creador de meta-repo agnóstico al negocio y al modelo — estudia un conjunto de repos y genera un hub de contexto AGENTS.md cross-repo",
         highlights: [
-          "Código simple con fuerte claridad",
-          "Demuestra atención a fundamentos de rendimiento",
-          "Utilidad práctica para cachear computaciones costosas",
+          "Extrae hábitos reales de review por repo y los fusiona con guías de estilo oficiales de cada lenguaje",
+          "Se auto-verifica: gate pre-commit determinístico + revisión adversarial con IA + ejecución real end-to-end en sandbox en cada cambio",
+          "Auto-mejorable por diseño — cualquier agente que detecta un vacío propone el ajuste al estándar generado",
         ],
       },
       personalSite: {
         name: "Sitio Personal",
-        tagline: "Monorepo para mi sitio de portafolio público (alejo86a.com)",
+        tagline: "Código fuente de alejo86a.com (Next.js/TypeScript/Tailwind) — el build compilado se despliega automáticamente a alejo86a.github.io vía GitHub Actions",
         highlights: [
-          "Entrega estática rápida con GitHub Pages",
+          "Pipeline de export estático: push a main → build → publicación al repo de Pages, sin pasos manuales",
           "Branding profesional y enlaces de contacto",
-          "Diseño responsivo con stack moderno",
+          "Diseño responsivo, modo oscuro, i18n EN/ES/PT",
         ],
       },
     },
@@ -937,12 +937,12 @@ export const translations = {
         ],
       },
       coordinadora: {
-        name: "Coordinadora API Tracking",
-        tagline: "Integração leve para consultar e normalizar rastreamento de envios da Coordinadora",
+        name: "ShipTrack API",
+        tagline: "API de rastreamento logístico construída story-first (método BMAD): PRD + 4 ADRs decididos antes de escrever uma linha de código",
         highlights: [
-          "Normaliza respostas da transportadora em modelo de domínio consistente",
-          "Útil para backends de e-commerce e dashboards logísticos",
-          "SDK TypeScript limpo com testes abrangentes",
+          "Arquitetura Clean/Hexagonal (NestJS, TypeScript, SQL puro, sem ORM) — cada decisão registrada em um ADR com justificativa e trade-offs",
+          "13 PRs, cada uma delimitada por uma Story + Critérios de Aceitação numerados acordados antes de implementar",
+          "Harness test-first: suítes unit/integration/e2e guiadas pelos AC, não adicionadas depois",
         ],
       },
       fuleo: {
@@ -963,22 +963,22 @@ export const translations = {
           "Anos de prática e aprendizado consistente",
         ],
       },
-      memoization: {
-        name: "Memoization em Node.js",
-        tagline: "Utilitário de memoização pequeno e legível usando closures para otimização de desempenho",
+      aiMetaRepo: {
+        name: "AI Meta-Repo Prompt",
+        tagline: "Um criador de meta-repo agnóstico ao negócio e ao modelo — estuda um conjunto de repos e gera um hub de contexto AGENTS.md cross-repo",
         highlights: [
-          "Código simples com forte clareza",
-          "Demonstra atenção a fundamentos de desempenho",
-          "Utilitário prático para cachear computações caras",
+          "Extrai hábitos reais de review por repo e os funde com guias de estilo oficiais de cada linguagem",
+          "Se auto-verifica: gate pre-commit determinístico + revisão adversarial com IA + execução real end-to-end em sandbox a cada mudança",
+          "Auto-aprimorável por design — qualquer agente que encontra uma lacuna propõe o ajuste de volta ao padrão gerado",
         ],
       },
       personalSite: {
         name: "Site Pessoal",
-        tagline: "Monorepo para meu site de portfólio público (alejo86a.com)",
+        tagline: "Código-fonte de alejo86a.com (Next.js/TypeScript/Tailwind) — o build compilado é publicado automaticamente em alejo86a.github.io via GitHub Actions",
         highlights: [
-          "Entrega estática rápida com GitHub Pages",
+          "Pipeline de export estático: push para main → build → publicação no repo de Pages, sem passos manuais",
           "Branding profissional e links de contato",
-          "Design responsivo com stack moderno",
+          "Design responsivo, modo escuro, i18n EN/ES/PT",
         ],
       },
     },
